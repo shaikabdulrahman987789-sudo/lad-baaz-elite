@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Rahman - Premium Dress Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Al Rahman</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#booking">Book Appointment</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Al Rahman</h1>
+            <p class="tagline">Premium Dress Design</p>
+            <p class="subtitle">Elite Tailoring for Discerning Customers</p>
+            <a href="#booking" class="cta-button">Book Your Appointment</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Traditional Wear</h3>
+                    <p>Exquisite sarees, lehengas, and traditional ethnic wear crafted with precision</p>
+                </div>
+                <div class="service-card">
+                    <h3>Formal Wear</h3>
+                    <p>Elegant suits, dresses, and formal attire for every occasion</p>
+                </div>
+                <div class="service-card">
+                    <h3>Bridal Collection</h3>
+                    <p>Bespoke bridal wear designed exclusively for your special day</p>
+                </div>
+                <div class="service-card">
+                    <h3>Casual Wear</h3>
+                    <p>Comfortable yet stylish everyday dresses tailored to perfection</p>
+                </div>
+                <div class="service-card">
+                    <h3>Custom Design</h3>
+                    <p>Personalized designs based on your vision and preferences</p>
+                </div>
+                <div class="service-card">
+                    <h3>Alterations</h3>
+                    <p>Professional alterations and modifications for perfect fit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2>Book Your Appointment</h2>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Select Service *</label>
+                    <select id="service" name="service" required>
+                        <option value="">Choose a service</option>
+                        <option value="traditional">Traditional Wear</option>
+                        <option value="formal">Formal Wear</option>
+                        <option value="bridal">Bridal Collection</option>
+                        <option value="casual">Casual Wear</option>
+                        <option value="custom">Custom Design</option>
+                        <option value="alterations">Alterations</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Preferred Date *</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Preferred Time *</label>
+                    <select id="time" name="time" required>
+                        <option value="">Select time slot</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="12:00">12:00 PM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="15:00">3:00 PM</option>
+                        <option value="16:00">4:00 PM</option>
+                        <option value="17:00">5:00 PM</option>
+                        <option value="18:00">6:00 PM</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="measurements">Body Measurements (Optional)</label>
+                    <textarea id="measurements" name="measurements" rows="4" placeholder="Chest, Waist, Hip, Length, etc."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Additional Notes</label>
+                    <textarea id="notes" name="notes" rows="4" placeholder="Any special requests or design ideas..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Book Appointment</button>
+            </form>
+            <div id="confirmationMessage" class="confirmation-message" style="display:none;">
+                <h3>✓ Appointment Booked Successfully!</h3>
+                <p>Thank you for booking with Al Rahman. We'll confirm your appointment shortly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Our Work</h2>
+            <p class="gallery-subtitle">Showcasing our finest creations</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Traditional Wear</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Bridal Design</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Formal Attire</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Casual Collection</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Custom Design</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Premium Alteration</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Location</h3>
+                    <p>Lad Baaz, Hyderabad Old City</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Phone</h3>
+                    <p>+91 [Your Phone Number]</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p>info@alrahman.com</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Hours</h3>
+                    <p>Mon - Fri: 10:00 AM - 8:00 PM<br>Sat - Sun: 11:00 AM - 7:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Al Rahman - Premium Dress Design. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
